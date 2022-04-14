@@ -23,7 +23,7 @@ entity Products {
         title            : localized String @(Common.Label : 'Name');
         description      : localized String;
         availability     : Integer @(Common.Label : 'Stock');
-        storage_capacity : Integer;
+        storage_capacity : Integer @(Common.Label : 'Storage');
         criticality      : Integer;
         price            : Decimal(9, 2);
         currency         : Currency;
