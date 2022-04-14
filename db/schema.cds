@@ -22,7 +22,7 @@ entity Products {
         identifier       : String           @Common.Label : 'ID';
         title            : localized String @(Common.Label : 'Name');
         description      : localized String;
-        availability     : Integer;
+        availability     : Integer @(Common.Label : 'Stock');
         storage_capacity : Integer;
         criticality      : Integer;
         price            : Decimal(9, 2);
